@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringCleaning2020", "SpringCleaning2020\SpringCleaning2020.csproj", "{B70ACB8A-654D-4DE7-8022-31515DB6C9D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpringCleaning2020", "SpringCleaning2020\SpringCleaning2020.csproj", "{B70ACB8A-654D-4DE7-8022-31515DB6C9D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiSteamFarm", "ArchiSteamFarm\ArchiSteamFarm\ArchiSteamFarm.csproj", "{A034DFA4-83A7-4568-A98B-4E0D52EB3C50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchiSteamFarm", "ArchiSteamFarm\ArchiSteamFarm\ArchiSteamFarm.csproj", "{A034DFA4-83A7-4568-A98B-4E0D52EB3C50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B70ACB8A-654D-4DE7-8022-31515DB6C9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +41,11 @@ Global
 		{A034DFA4-83A7-4568-A98B-4E0D52EB3C50}.Release|x64.Build.0 = Release|Any CPU
 		{A034DFA4-83A7-4568-A98B-4E0D52EB3C50}.Release|x86.ActiveCfg = Release|Any CPU
 		{A034DFA4-83A7-4568-A98B-4E0D52EB3C50}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B0CBACA-20C7-49E4-8027-0A13F248D65E}
 	EndGlobalSection
 EndGlobal

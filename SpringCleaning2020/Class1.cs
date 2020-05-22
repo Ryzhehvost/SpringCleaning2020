@@ -34,14 +34,15 @@ namespace SpringCleaning2020
 
 			IDocument html =  await bot.ArchiWebHandler.UrlPostToHtmlDocumentWithSession(ArchiWebHandler.SteamStoreURL, html_request).ConfigureAwait(false);
 
-			IHtmlCollection<IElement> coll = html.DocumentElement.QuerySelectorAll(".task_dialog_row > div > div > div:nth-child(1)");
+			IHtmlCollection<IElement> coll = html.DocumentElement.QuerySelectorAll(".task_dialog_row > div > div > div:nth-child(1)");			
 			IEnumerable<uint> appids = coll.Select(x => uint.Parse(x.GetAttributeValue("data-sg-appid"))).Distinct();
 
 			string query = "addlicense "+string.Join(",",appids.Select(x => "a/" + x.ToString()));
 			await bot.Commands.Response(steamID, query).ConfigureAwait(false);
 			await bot.Actions.Play(appids).ConfigureAwait(false);
+			await Task.Delay(1000).ConfigureAwait(false);
 			bot.Actions.Resume();
-			return "Done!";
+			return "<"+bot.BotName+"> Done!";
 		}
 		private static async Task<string> ResponseCleaning(ulong steamID, string botNames) {
 			HashSet<Bot> bots = Bot.GetBots(botNames);
